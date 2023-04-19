@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interface\**" />
+    <EmbeddedResource Remove="Interface\**" />
+    <None Remove="Interface\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Saeid\.nuget\packages\select.htmltopdf\22.2.0\contentFiles\any\any\Select.Html.dep" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\MiniPerson.Contract\MiniPerson.Contract.csproj" />
+    <ProjectReference Include="..\MiniPerson.Infrastructure.DataBase\MiniPerson.Infrastructure.DataBase.csproj" />
+  </ItemGroup>
+
+</Project>
